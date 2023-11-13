@@ -9,6 +9,8 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@types/react-icons": "^3.0.0",
+    "@types/styled-components": "^5.1.30",
     "amazon-cognito-identity-js": "^6.3.7",
     "aws-amplify": "^5.3.12",
     "expo": "~49.0.15",
@@ -16,8 +18,10 @@
     "expo-status-bar": "~1.6.0",
     "expo-web-browser": "^12.5.0",
     "react": "18.2.0",
+    "react-icons": "^4.11.0",
     "react-native": "0.72.6",
-    "react-router-dom": "^6.18.0"
+    "react-router-dom": "^6.18.0",
+    "styled-components": "^6.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
