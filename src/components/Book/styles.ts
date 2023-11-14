@@ -6,13 +6,14 @@ export const BookContainer = styled.View`
   padding: 10px;
   border-width: 1px;
   border-color: #ddd;
-  border-radius: 5px;
+  border-radius: 6px;
 `;
 
 export const BookImage = styled.Image`
   width: 80px;
   height: 120px;
   margin-right: 10px;
+  border-radius: 6px;
 `;
 
 export const BookDetails = styled.View`
