@@ -26,11 +26,3 @@ export const SocialButtons = styled.View`
   margin-bottom: 20px;
   gap: 10px;
 `;
-
-export const SocialButton = styled.Button`
-  background-color: #0096ff;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100px;
-`;

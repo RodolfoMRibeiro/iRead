@@ -1,14 +1,27 @@
 import React from 'react';
-import { Container, SocialButton, SocialButtons, Text } from './styles';
+import { Container, SocialButtons, Text } from './styles';
 import { LoginForm } from '../../components/LoginForm';
+import { SocialLoginButton } from '../../components/SocialLoginButton';
 
 const SocialLogin: React.FC = () => {
   return (
     <React.Fragment>
       <Text>Or log in with:</Text>
       <SocialButtons>
-        <SocialButton title="Facebook" />
-        <SocialButton title="Twitter" />
+        <SocialLoginButton
+          lable="Google"
+          iconName="google"
+          onPress={() => {
+            console.log('hello');
+          }}
+        />
+        <SocialLoginButton
+          lable="Facebook"
+          iconName="facebook"
+          onPress={() => {
+            console.log('hello');
+          }}
+        />
       </SocialButtons>
     </React.Fragment>
   );
