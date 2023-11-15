@@ -9,7 +9,16 @@
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
-      "*": ["types/*"]
+      "*": ["types/*"],
+      "@api/*": ["./api/*"],
+      "@assets/*": ["./assets/*"],
+      "@components/*": ["./components/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@mock/*": ["./mock/*"],
+      "@screens/*": ["./screens/*"],
+      "@services/*": ["./services/*"],
+      "@theme/*": ["./theme/*"],
+      "@utils/*": ["./utils/*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
