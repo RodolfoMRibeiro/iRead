@@ -1,13 +1,14 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react';
 import { LibraryScreen } from '../screens/library';
+import { BottomNavigationBar } from '../components/BottomNavigationBar';
 
-const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 export function AppStack() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Library" component={LibraryScreen} />
-    </Stack.Navigator>
+    <Tab.Navigator tabBar={(props) => <BottomNavigationBar {...props} />}>
+      <Tab.Screen name="Library" component={LibraryScreen} />
+    </Tab.Navigator>
   );
 }
