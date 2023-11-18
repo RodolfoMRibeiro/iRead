@@ -11,6 +11,10 @@
       "resizeMode": "cover",
       "backgroundColor": "black"
     },
+    "plugins": [
+      "@config-plugins/react-native-blob-util",
+      "@config-plugins/react-native-pdf"
+    ],
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
