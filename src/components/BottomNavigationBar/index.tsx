@@ -24,6 +24,7 @@ const tabBarItems: Array<BottomNavigationData> = [
 
 export const BottomNavigationBar: React.FC<BottomTabBarProps> = ({
   navigation,
+  state,
 }) => {
   return (
     <NavigationContainer>
@@ -32,7 +33,11 @@ export const BottomNavigationBar: React.FC<BottomTabBarProps> = ({
           key={index}
           onPress={() => navigation.navigate(item.pageRoute)}
         >
-          <Icon name={item.icon} size={24} color="#000" />
+          <Icon
+            name={item.icon}
+            size={24}
+            color={state.index === index ? '#000' : '#666'}
+          />
           <NavigationItemLabel>{item.lable}</NavigationItemLabel>
         </NavigationItem>
       ))}
