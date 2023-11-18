@@ -1,8 +1,7 @@
 import React from 'react';
-import { ScrollView, View } from 'react-native';
+import { ScrollView } from 'react-native';
 
 import { Book } from '../../components/Book';
-import { NavigationTitle } from '../../components/NavigationTitle';
 
 export const LibraryScreen = () => {
   const books = [
@@ -58,9 +57,6 @@ export const LibraryScreen = () => {
 
   return (
     <ScrollView style={{ width: '100%' }}>
-      <View>
-        <NavigationTitle title="Library" />
-      </View>
       {books.map((book, index) => (
         <Book
           key={index}

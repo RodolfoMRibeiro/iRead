@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import * as asyncStorage from '../storage/User';
+import * as asyncStorage from '../services/storage/User';
 import * as authService from '../services/auth/authService';
 import { Alert } from 'react-native';
 
