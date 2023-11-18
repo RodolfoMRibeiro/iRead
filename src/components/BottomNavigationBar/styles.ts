@@ -10,20 +10,15 @@ export const NavigationContainer = styled.View`
   background-color: #fff;
   border-top-width: 1px;
   border-top-color: #ccc;
-  padding-block: 10px;
+  padding-block: 8px;
 `;
 
 export const NavigationItem = styled.TouchableOpacity`
-  flex-direction: column;
+  flex: 1;
   align-items: center;
-  color: #888;
 `;
 
-export const Icon = styled.Text`
-  font-size: 24px;
-`;
-
-export const Label = styled.Text`
-  font-size: 12px;
-  margin-top: 3px;
+export const NavigationItemLabel = styled.Text`
+  font-size: 10px;
+  color: #000;
 `;
